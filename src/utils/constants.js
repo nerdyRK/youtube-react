@@ -1,2 +1,3 @@
-const KEY="AIzaSyBNL5GGY1cYpm6U3ipIeYAhJS4huke5W7s"
-export const API=`https://youtube.googleapis.com/youtube/v3/videos?part=snippet%2CcontentDetails%2Cstatistics&chart=mostPopular&maxResults=50&regionCode=IN&key=${KEY}`
+
+
+export const API=`https://youtube.googleapis.com/youtube/v3/videos?part=snippet%2CcontentDetails%2Cstatistics&chart=mostPopular&maxResults=50&regionCode=IN&key=${import.meta.env.VITE_KEY}`

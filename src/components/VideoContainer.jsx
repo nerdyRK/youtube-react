@@ -20,7 +20,7 @@ const VideoContainer = () => {
     <div className="flex flex-wrap justify-center">
       <ButtonList />
       <div className="flex flex-wrap justify-center">
-        {videos.map((video) => (
+        {videos?.map((video) => (
           <VideoCard key={video.id} info={video} />
         ))}
       </div>

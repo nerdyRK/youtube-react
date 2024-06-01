@@ -1,9 +1,17 @@
+import { useDispatch } from "react-redux";
+import { toggleMenu } from "../utils/appSlice";
+
 const Head = () => {
+  const dispatch = useDispatch();
+  const handleToggleMenu = () => {
+    dispatch(toggleMenu());
+  };
   return (
     <div className="grid grid-flow-col border-2 shadow-md items-center">
       <div className="flex col-span-1 items-center">
         <img
-          className="w-8 h-8"
+          className="w-8 h-8 cursor-pointer"
+          onClick={handleToggleMenu}
           src="https://static.vecteezy.com/system/resources/previews/021/190/402/original/hamburger-menu-filled-icon-in-transparent-background-basic-app-and-web-ui-bold-line-icon-eps10-free-vector.jpg"
           alt=""
         />

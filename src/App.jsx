@@ -1,7 +1,11 @@
+import Body from "./components/Body";
+import Head from "./components/Head";
+
 function App() {
   return (
     <div className="App">
-      <h1>Hello World</h1>
+      <Head />
+      <Body />
     </div>
   );
 }

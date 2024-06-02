@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { API } from "../utils/constants";
 import VideoCard from "./VideoCard";
 import ButtonList from "./ButtonList";
+import { Link } from "react-router-dom";
 const VideoContainer = () => {
   const [videos, setVideos] = useState([]);
 
@@ -21,7 +22,9 @@ const VideoContainer = () => {
       <ButtonList />
       <div className="flex flex-wrap justify-center">
         {videos?.map((video) => (
-          <VideoCard key={video.id} info={video} />
+          <Link key={video.id} to={`/watch?v=${video.id}`}>
+            <VideoCard info={video} />
+          </Link>
         ))}
       </div>
     </div>

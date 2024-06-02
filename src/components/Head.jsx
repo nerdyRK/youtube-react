@@ -15,6 +15,7 @@ const Head = () => {
           src="https://static.vecteezy.com/system/resources/previews/021/190/402/original/hamburger-menu-filled-icon-in-transparent-background-basic-app-and-web-ui-bold-line-icon-eps10-free-vector.jpg"
           alt=""
         />
+
         <img
           className="w-32 h-20 object-cover"
           src="https://iconape.com/wp-content/png_logo_vector/new-youtube-logo.png"
